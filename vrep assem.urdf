@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vrep assem">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.383152588202257 0.185902366508361 0.470075519317978"
+        rpy="0 0 0" />
+      <mass
+        value="0.575466499813394" />
+      <inertia
+        ixx="0.0153226586416436"
+        ixy="-0.0025462010488764"
+        ixz="-8.63081981887557E-06"
+        iyy="0.0104688278279708"
+        iyz="-4.06860128446155E-06"
+        izz="0.0160466640071415" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_right">
+    <inertial>
+      <origin
+        xyz="-1.94970428690766E-12 -6.67244037799719E-14 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="0.115102821118152" />
+      <inertia
+        ixx="0.000106643719950305"
+        ixy="4.56658331754369E-16"
+        ixz="1.62400798755411E-15"
+        iyy="0.000106643719976397"
+        iyz="1.30678689203074E-15"
+        izz="0.00019594157814619" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/front_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/front_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR"
+    type="continuous">
+    <origin
+      xyz="0.26869 -0.27026 0.11766"
+      rpy="1.5708 1.476 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rear_right">
+    <inertial>
+      <origin
+        xyz="-1.91313631603407E-12 -9.68669588985449E-14 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="0.115102821118151" />
+      <inertia
+        ixx="0.000106643719950489"
+        ixy="4.58160121169851E-16"
+        ixz="1.62629582030337E-15"
+        iyy="0.000106643719976159"
+        iyz="1.30289643966238E-15"
+        izz="0.000195941578146207" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/rear_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/rear_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RR"
+    type="continuous">
+    <origin
+      xyz="0.46869 -0.27026 0.11766"
+      rpy="-1.5708 0.83925 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_right" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_left">
+    <inertial>
+      <origin
+        xyz="-1.97078464658773E-12 -1.06553654788399E-13 -0.015"
+        rpy="0 0 0" />
+      <mass
+        value="0.115102821118152" />
+      <inertia
+        ixx="0.000106643719950502"
+        ixy="4.88683800457107E-16"
+        ixz="1.60785025872536E-15"
+        iyy="0.00010664371997634"
+        iyz="1.29395216007093E-15"
+        izz="0.000195941578146232" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/front_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/front_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL"
+    type="continuous">
+    <origin
+      xyz="0.268689611602575 -0.640257977049192 0.11765591613161"
+      rpy="-1.5707963267949 0.398791229828957 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rear_left">
+    <inertial>
+      <origin
+        xyz="-1.96082039494172E-12 -7.24975635080227E-14 -0.0150000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="0.115102821118152" />
+      <inertia
+        ixx="0.000106643719950326"
+        ixy="4.64052082350952E-16"
+        ixz="1.61945255609792E-15"
+        iyy="0.000106643719976421"
+        iyz="1.3041505298431E-15"
+        izz="0.000195941578146198" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/rear_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/rear_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RL"
+    type="continuous">
+    <origin
+      xyz="0.468689611602576 -0.640257977049192 0.117655916131611"
+      rpy="-1.5707963267949 -0.264623989165776 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_left" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="feeder">
+    <inertial>
+      <origin
+        xyz="0.0459158251783691 0.0490115746233654 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.169748712388981" />
+      <inertia
+        ixx="0.000448101444513187"
+        ixy="-0.000136024480979409"
+        ixz="-1.00508096885172E-19"
+        iyy="0.000535551848866895"
+        iyz="-7.49995825562227E-20"
+        izz="0.000419358631866529" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/feeder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vrep assem/meshes/feeder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="feeder"
+    type="prismatic">
+    <origin
+      xyz="0.39419 -0.47026 0.15566"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="feeder" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.599"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
